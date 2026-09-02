@@ -30,12 +30,19 @@ yarn-debug.log*
 yarn-error.log*
 .pnpm-debug.log*
 
-# env files (can opt-in for committing if needed)
-.env*
-
-# vercel
-.vercel
-
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# python & backend
+backend/venv/
+backend/.env
+.env
+.env*
+!.env.example
+!backend/.env.example
+*.db
+backend/chroma_db/
+__pycache__/
+*.pyc
+dlf-content-gov-export.zip
