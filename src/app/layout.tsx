@@ -17,8 +17,8 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DLF Content Studio",
-  description: "AI-assisted luxury content generation and governance.",
+  title: "ContentStudio | AI Blog Checker & Governance Platform",
+  description: "Autonomous multi-agent AI pipeline for blog drafting, factual verification, compliance checking, SEO, and editorial quality.",
 };
 
 export default function RootLayout({

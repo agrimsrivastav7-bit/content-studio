@@ -11,9 +11,9 @@ from .routers import requests, health, knowledge, export, analytics
 from . import database as db
 
 app = FastAPI(
-    title="DLF Content Governance API",
-    description="Backend for the AI-assisted content generation platform.",
-    version="1.0.0"
+    title="Content Studio Governance API",
+    description="Multi-agent AI content governance and quality auditing system",
+    version="1.0.0",
 )
 
 import os
@@ -42,4 +42,4 @@ app.include_router(analytics.router, prefix="/api/v1")
 
 @app.get("/")
 async def root():
-    return {"message": "DLF Content Governance API is running."}
+    return {"message": "Content Studio Governance API is running."}

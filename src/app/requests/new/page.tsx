@@ -163,7 +163,7 @@ export default function NewRequestPage() {
                   <Label htmlFor="projectRef">Project Reference</Label>
                   <Select value={formData.project_reference} onValueChange={(val) => handleChange("project_reference", val as string)}>
                     <SelectTrigger id="projectRef" className="py-6">
-                      <SelectValue placeholder="Select DLF Project" />
+                      <SelectValue placeholder="Select Knowledge Domain / Project" />
                     </SelectTrigger>
                     <SelectContent>
                       <SelectItem value="none">None / General</SelectItem>
@@ -171,7 +171,7 @@ export default function NewRequestPage() {
                       <SelectItem value="magnolias">The Magnolias</SelectItem>
                       <SelectItem value="aralias">The Aralias</SelectItem>
                       <SelectItem value="crest">The Crest</SelectItem>
-                      <SelectItem value="privana">DLF Privana</SelectItem>
+                      <SelectItem value="privana">Privana</SelectItem>
                     </SelectContent>
                   </Select>
                 </div>

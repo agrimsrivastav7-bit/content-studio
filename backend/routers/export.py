@@ -38,23 +38,23 @@ async def export_pdf(request_id: str):
     
     # Custom styles
     title_style = ParagraphStyle(
-        'DLFTitle',
+        'ContentStudioTitle',
         parent=styles['Heading1'],
         fontName='Helvetica-Bold',
         fontSize=18,
         spaceAfter=14,
-        textColor=HexColor('#002855') # DLF Navy
+        textColor=HexColor('#0f172a') # Slate Dark
     )
     meta_style = ParagraphStyle(
-        'DLFMeta',
+        'ContentStudioMeta',
         parent=styles['Normal'],
         fontName='Helvetica',
         fontSize=9,
-        textColor=HexColor('#666666'),
+        textColor=HexColor('#64748b'),
         spaceAfter=20
     )
     body_style = ParagraphStyle(
-        'DLFBody',
+        'ContentStudioBody',
         parent=styles['Normal'],
         fontName='Helvetica',
         fontSize=11,
@@ -65,7 +65,7 @@ async def export_pdf(request_id: str):
     flowables = []
     
     # Header
-    flowables.append(Paragraph("DLF CONTENT GOVERNANCE", meta_style))
+    flowables.append(Paragraph("CONTENT GOVERNANCE STUDIO", meta_style))
     flowables.append(Paragraph(req.get("topic", "Untitled Document"), title_style))
     
     date_str = datetime.datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC")
@@ -101,7 +101,7 @@ async def export_pdf(request_id: str):
     
     buffer.seek(0)
     
-    filename = f"DLF_{request_id}.pdf"
+    filename = f"Content_{request_id}.pdf"
     
     return StreamingResponse(
         buffer,
@@ -156,7 +156,7 @@ async def export_docx(request_id: str):
     doc.save(buffer)
     buffer.seek(0)
     
-    filename = f"DLF_{request_id}.docx"
+    filename = f"Content_{request_id}.docx"
     
     return StreamingResponse(
         buffer,

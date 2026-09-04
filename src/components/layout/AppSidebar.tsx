@@ -40,7 +40,7 @@ export function AppSidebar() {
   return (
     <Sidebar>
       <SidebarHeader className="h-16 flex flex-row items-center justify-start px-6 border-b">
-        <span className="font-bold text-lg tracking-tight">DLF <span className="font-light text-muted-foreground">Content Studio</span></span>
+        <span className="font-bold text-lg tracking-tight">Content <span className="font-light text-muted-foreground">Studio</span></span>
       </SidebarHeader>
       <SidebarContent>
         <SidebarGroup>

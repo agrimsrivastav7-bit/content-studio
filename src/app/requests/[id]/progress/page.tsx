@@ -28,19 +28,19 @@ const AGENT_DESCRIPTIONS: Record<string, string> = {
   "Content Strategist Agent":
     "Analyzing topic, audience, and keyword to create a content strategy brief.",
   "Retrieval Engine":
-    "Querying the ChromaDB vector database for verified DLF property facts.",
+    "Querying the ChromaDB vector database for verified domain knowledge and facts.",
   "Competitor Intelligence Agent":
     "Scraping competitor sites for comparative context.",
   "Drafting Agent":
-    "Writing a luxury editorial draft grounded in retrieved facts.",
+    "Writing an editorial draft strictly grounded in retrieved facts.",
   "Localization Agent":
     "Adjusting draft tone and nuances based on target audience.",
   "Human Review Required":
     "Waiting for human review and approval of the generated draft.",
   "Compliance Validator":
-    "Scanning draft for RERA violations, investment claims, and unverifiable superlatives.",
+    "Scanning draft for policy violations, unverified claims, and regulatory risks.",
   "Brand Tone Validator":
-    "Checking alignment with DLF's luxury brand voice guidelines.",
+    "Checking alignment with brand voice and editorial guidelines.",
   "SEO Intelligence Agent":
     "Analyzing keyword density, header structure, and content length.",
   "Risk Scoring Engine":

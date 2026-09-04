@@ -1,6 +1,7 @@
 {
-  "name": "dlf-content-gov",
-  "version": "0.1.0",
+  "name": "ai-blog-governance-studio",
+  "version": "1.0.0",
+  "description": "Autonomous multi-agent AI pipeline for blog drafting, factual verification, compliance checking, SEO, and editorial quality governance.",
   "private": true,
   "scripts": {
     "dev": "next dev",
